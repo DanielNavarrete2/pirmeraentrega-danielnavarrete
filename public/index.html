@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body >
+    <!-- Header -->
+    <header class="bg-[#020617] text-white shadow-md fixed w-full top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+
+        <div class="text-2xl  font-bold font-inter tracking-wide">
+          <a href="index.html">MusicZone</a></div>
+
+        <!-- Botón hamburguesa (solo móvil) -->
+        <button id="menu-btn" aria-label="Abrir menú de navegación" class="md:hidden focus:outline-none">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Navbar escritorio -->
+        <nav class="hidden md:flex flex-1 items-center justify-end ml-8">
+          <ul class="flex space-x-6 font-inter text-white text-base">
+            <li><a href="index.html" class="hover:text-purple-400 transition-colors">Inicio</a></li>
+            <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+            <li><a href="about.html" class="hover:text-purple-400 transition-colors">Nosotros</a></li>
+            <li><a href="contacto.html" class="hover:text-purple-400 transition-colors">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Menú móvil -->
+      <ul id="mobile-menu" class="hidden flex-col bg-gray-700 text-white w-full absolute top-full left-0 z-50">
+        <li><a href="index.html" class="block px-4 py-2 hover:bg-gray-600">Inicio</a></li>
+        <li><a href="blog.html" class="block px-4 py-2 hover:bg-gray-600">Blog</a></li>
+        <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-600">Nosotros</a></li>
+        <li><a href="contacto.html" class="block px-4 py-2 hover:bg-gray-600">Contacto</a></li>
+      </ul>
+    </header>
+
+<!-- Hero Section  -->
+<section class="relative w-full min-h-screen overflow-hidden">
+
+  <img src="assets/img/hero.jpg" alt="Música" 
+       class="absolute inset-0 w-full h-full object-cover object-center" />
+
+ 
+  <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
+
+
+  <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 sm:px-12 py-32 sm:py-40 md:py-48 text-white max-w-4xl mx-auto">
+    
+
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold font-inter  mb-6 pt-36">¡Bienvenido!</h1>
+
+
+    <p class="text-lg sm:text-xl md:text-2xl mb-10 font-inter">Tu espacio para descubrir la mejor música</p>
+
+
+    <div class="bg-black/80 rounded-xl p-6 sm:p-8 w-full max-w-md">
+      <h2 class="text-xl sm:text-2xl font-semibold font-inter mb-4 font-inter">Lo más escuchado en Chile</h2>
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="https://open.spotify.com/playlist/37i9dQZEVXbL0GavIqMTeb?si=6c26809c45c74076" target="_blank" 
+           class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 font-inter transition-colors duration-200">
+          <img src="assets/img/logo-spotify.png" alt="Spotify" class="w-5 h-5" /> Spotify
+        </a>
+        <a href="https://music.apple.com/cl/playlist/top-100-chile/pl.81015bbbefdd46758b2c8c7065f0863e" target="_blank"
+           class="bg-gray-100 hover:bg-gray-200 text-black px-4 py-2 rounded-lg flex items-center gap-2 font-inter transition-colors duration-200">
+          <img src="assets/img/apple-music.svg" alt="Apple Music" class="w-5 h-5" /> Apple Music
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<main class="w-full pb-20 bg-black font-inter pt-10">
+  <div class="w-full relative px-4 sm:px-6 md:px-12 lg:px-20">
+
+ <!-- Título -->
+   <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-inter text-white text-center mb-2">Nuevos Lanzamientos</h2>
+    <div class="mx-auto w-36 h-1 bg-yellow-500 mb-4 rounded"></div>
+
+
+
+
+
+    <!-- Nuevos lanzamientos -->
+     <div class="w-full lg:flex lg:justify-center lg:px-0 relative ">
+         <button id="prev" class="block lg:hidden absolute left-2 top-[50%] -translate-y-1/2 z-10 bg-gray-800/50 text-white p-1.5 rounded-full">&lt;</button>
+   <button id="next" class="block lg:hidden absolute right-2 top-[50%] -translate-y-1/2 z-10 bg-gray-800/50 text-white p-1.5 rounded-full">&gt;</button>
+
+    <div id="carousel" class="flex overflow-x-auto scroll-smooth gap-4 py-4 justify-start lg:justify-start px-10 hide-scroll-bar mr-6">
+
+      <!-- Card 1 -->
+       <a href="https://open.spotify.com/intl-es/album/47pjW3XDPW99NShtkeewxl?si=ZiLMOLjwTRmHsZO9Nu8vag" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/d1.jpg" alt="Album de Nine inch nails" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">TRON: Ares</p>
+        <h3 class="text-white text-sm">Nine Inch Nails</h3>
+       </a>
+
+       <a href="https://open.spotify.com/intl-es/album/1El3k8dU3sKyoGUeuyrolH?si=q1NlLuK8T_aEtNTy3gjPEA" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/d2.jpg" alt="Album de Twenty one pilots" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Breach</p>
+        <h3 class="text-white text-sm">Twenty one pilots</h3>
+       </a>
+
+       <a href="https://open.spotify.com/intl-es/album/7i1NJXQNNFZPyjE0W3GPgE?si=mOz1gDbDSn-jpqC1EaP9SA" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/d3.jpg" alt="Album de greta van fleet" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Starcatcher</p>
+        <h3 class="text-white text-sm">Greta Van Fleet</h3>
+       </a>
+
+       <a href="https://open.spotify.com/intl-es/album/0SgF4c7VeFBoATEdpTvgG8?si=vZ22F2oKRjyOlecZSsoHPw" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/d4.jpg" alt="Album de judas priest" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Invincible Shield</p>
+        <h3 class="text-white text-sm">Judas Priest</h3>
+       </a>
+
+       <a href="https://open.spotify.com/intl-es/album/3TymcPWXqsCRA5oSL0TkPU?si=fs8801vkTKO0tlqQ-fiVuw" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/d5.jpg" alt="Album de iron maiden" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Senjutsu</p>
+        <h3 class="text-white text-sm">Iron Maiden</h3>
+       </a>
+
+       <a href="https://open.spotify.com/intl-es/album/6UwjRSX9RQyNgJ3LwYhr9i?si=EGyIyrI_ThepWINqXmNAmg" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/d6.jpg" alt="Album de metallica" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">72 Seasons</p>
+        <h3 class="text-white text-sm">Metallica</h3>
+       </a>
+    </div>
+      </div>
+
+
+
+    <!--  Clásicos -->
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-inter mb-2 font-inter text-white text-center mt-10">
+      Clasicos
+      </h2>
+     <div class="mx-auto w-44 h-1 bg-yellow-500 mb-6 rounded"></div>
+     <div class="w-full mt-12 relative ">
+        <button id="prevClasicos" class="block lg:hidden absolute left-2 top-[50%] -translate-y-1/2 z-10 bg-gray-800/50 text-white p-1.5 rounded-full">&lt;</button>
+        <button id="nextClasicos" class="block lg:hidden absolute right-2 top-[50%] -translate-y-1/2 z-10 bg-gray-800/50 text-white p-1.5 rounded-full">&gt;</button>
+     <div class="w-full lg:flex lg:justify-center lg:px-0">
+
+        <div id="carouselClasicos" class="flex overflow-x-auto scroll-smooth gap-4 py-4 justify-start lg:justify-start px-10 hide-scroll-bar mr-6">
+
+      <!-- Cards -->
+       <a href="https://open.spotify.com/intl-es/album/0r7o2FeARRr23EZ0TJ0a8S?si=Z8gVn7FeShKkMF46tR81sg" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/r1.jpg" alt="Album de talking heads" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Talking Heads: 77</p>
+        <h3 class="text-white text-sm">Talking Heads</h3>
+       </a>
+
+    
+       <a href="https://open.spotify.com/intl-es/album/61j7phQkxuKzcoFsi0XtkQ?si=n1NqvchzSxm3zRLpCyAV2w" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/r2.jpg" alt="Album de blackSabbath" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Vol.4</p>
+        <h3 class="text-white text-sm">Black-Sabbath</h3>
+       </a>
+
+       
+       <a href="https://open.spotify.com/intl-es/album/5B4PYA7wNN4WdEXdIJu58a?si=ao7Gs5ZxTzmg8Zf5leYk9A" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/r3.jpg" alt="Album de pearl jam" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Ten</p>
+        <h3 class="text-white text-sm">Pearl Jam</h3>
+       </a>
+
+       
+       <a href="https://open.spotify.com/intl-es/album/3QyCjcfNt3S5wiWGEH0h7D?si=SOMFvCTQTPq_LGZTEG4_Yw" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/r4.jpg" alt="Album de motleyCrue" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Theatre of Pain</p>
+        <h3 class="text-white text-sm">Mötley Crüe</h3>
+       </a>
+
+       
+       <a href="https://open.spotify.com/intl-es/album/3VSOzRDe4dNrjcCYEeLz9b?si=hRoqB_zeQfOGNUCYH2RapA" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/r5.jpg" alt="Album de blackSabbath" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Sabotage</p>
+        <h3 class="text-white text-sm">Black-Sabbath</h3>
+       </a>
+
+      
+       <a href="https://open.spotify.com/intl-es/album/4qUMByJ3Pk94BFnCmGaUPS?si=KXZM98uOTNarnqx5flxOjg" class="flex-none w-40 sm:w-44  bg-slate-800/60 p-2 rounded-xl shadow-lg cursor-pointer md:w-1/3 lg:w-52"target="_blank">
+        <img src="assets/img/r6.jpg" alt="Album de ozzy" class="rounded-lg w-full mb-2 object-cover">
+        <p class="font-semibold font-inter text-sm text-gray-400">Blizzard Of Ozz</p>
+        <h3 class="text-white text-sm">Ozzy osbourne</h3>
+       </a>
+
+
+      
+
+    </div>
+  </div>
+      </div>
+
+</main>
+
+<section class="bg-white mt-12 mb-20">
+  <div class="flex items-start max-w-6xl mx-auto px-4 mb-4">
+     <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold font-inter text-black mb-2 pl-10">Explora nuestro Blog</h2>
+     <a href="blog.html" class="ml-auto px-4 sm:px-6 py-2 sm:py-3 bg-red-500 text-white rounded hover:bg-red-600 text-center">
+      Ver más artículos
+    </a>
+  </div>
+
+
+
+
+    <div class="flex flex-wrap justify-center gap-6">
+
+    <!-- Artículo 1 -->
+     <a href="blog/article1.html" class="block">
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden">
+        <img src="assets/img/a1.avif" alt="imagen de discos" class="img-article">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Top 10 discos de rock alternativo</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Descubre los discos que han definido el sonido del rock alternativo a lo largo de los años.
+        </p>
+        <a href="blog/article1.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+    </a>
+
+    <!-- Artículo 2 -->
+     <a href="blog/article1.html" class="block">
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden ">
+        <img src="assets/img/a2.jpg" alt="Nuevo lanzamiento de Twenty One Pilots" class="img-article ">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Nuevo lanzamiento de Twenty One Pilots "Breach"</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Sumérgete en el mundo de Twenty One Pilots con “Breach”, lleno de ritmos urbanos y melodías pegajosas.
+        </p>
+        <a href="blog/article2.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+    </a>
+
+
+
+  </div>
+
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-200 font-inter font-semibold font-inter">
+      <div class="container mx-auto py-14 px-6">
+        <div class="flex flex-wrap justify-center md:justify-between gap-8">
+          <!-- Logo + descripción -->
+          <div class="w-full md:w-1/3 lg:w-1/4 mb-8 md:mb-0 text-center md:text-left">
+            <a href="index.html">
+              <img class="h-28 mx-auto md:mx-0" src="assets/img/logo-2.png" alt="Logo" />
+            </a>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Tu portal de música desde.  
+
+              <br />
+              Contenido seguro y actualizado para todo Chile.
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="w-full sm:w-1/2 md:w-1/6 mb-6 md:mb-0 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Contacto</h5>
+            <ul class="list-none space-y-2">
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">+569 123 456 789</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">contacto@gmail.com</a></li>
+            </ul>
+          </div>
+
+          <!-- Páginas legales -->
+          <div class="w-full sm:w-1/2 md:w-1/6 mb-6 md:mb-0 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Explora más música</h5>
+            <ul class="list-none space-y-2">
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Novedades</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Vinilos clásicos</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Playlists recomendadas</a></li>
+            </ul>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="w-full sm:w-1/2 md:w-1/6 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Síguenos</h5>
+            <div class="flex flex-col space-y-2 items-center md:items-start">
+              <a href="https://instagram.com" target="_blank" class="flex items-center text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                <img src="assets/img/intagram logo.png" alt="Instagram" class="w-5 h-5 mr-2" />
+                Instagram
+              </a>
+              <a href="https://x.com" target="_blank" class="flex items-center text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                <img src="assets/img/x logo.png" alt="X" class="w-5 h-5 mr-2" />
+                X
+              </a>
+              <a href="https://facebook.com" target="_blank" class="flex items-center text-gray-400 hover:text-blue-600 transition-colors duration-300">
+                <img src="assets/img/facebook logo.png" alt="Facebook" class="w-5 h-5 mr-2" />
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Separador -->
+      <div class="py-7 flex justify-center">
+        <div class="border-t border-gray-800 w-11/12 max-w-7xl"></div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center py-4 text-sm text-gray-400 tracking-wide">
+        <p class="mb-0">
+          &copy;<script>document.write(new Date().getFullYear());</script> MusicZone. Todos los Derechos Reservados 
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/menu-movil.js"></script>
+    <script src="assets/js/carrusel.js"></script>
+  </body>
+</html>

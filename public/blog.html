@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+  <body>
+
+    <!-- Header -->
+<header class="bg-[#020617] text-white shadow-md  fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+     <div class="text-2xl  font-bold font-inter tracking-wide">
+     <a href="index.html">MusicZone</a></div>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button id="menu-btn" aria-label="Abrir menú de navegación" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Navbar escritorio -->
+    <nav class="hidden md:flex flex-1 items-center justify-end ml-8">
+      <ul class="flex space-x-6 font-inter text-white text-base">
+        <li><a href="index.html" class="hover:text-purple-400 transition-colors">Inicio</a></li>
+        <li><a href="blog.html" class="hover:text-purple-400 transition-colors text-purple-400">Blog</a></li>
+        <li><a href="about.html" class="hover:text-purple-400 transition-colors">Nosotros</a></li>
+        <li><a href="contacto.html" class="hover:text-purple-400 transition-colors">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Menú móvil -->
+  <ul id="mobile-menu" class="hidden flex-col bg-gray-700 text-white w-full absolute top-full left-0 z-50">
+    <li><a href="index.html" class="block px-4 py-2 hover:bg-gray-600">Inicio</a></li>
+    <li><a href="blog.html" class="block px-4 py-2 hover:bg-gray-600">Blog</a></li>
+    <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-600">Nosotros</a></li>
+    <li><a href="contacto.html" class="block px-4 py-2 hover:bg-gray-600">Contacto</a></li>
+  </ul>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-1 pt-10">
+
+<section aria-label="Últimos Videos" class="max-w-7xl mx-auto px-4 py-12 font-inter">
+  <div class="w-full my-8 flex items-center">
+    <h2 class="text-2xl sm:text-[28px] leading-tight font-inter font-semibold text-black">
+      Últimos Videos
+    </h2>
+    <div class="flex-1 h-[2px] bg-black ml-4"></div>
+  </div>
+
+  <div id="videos-grid" class="flex flex-wrap justify-center gap-6">
+    
+    <!-- Video 1 -->
+    <article class="ariculos-videos group">
+      <div class="bg-gray-200 flex items-center justify-center overflow-hidden">
+        <img src="https://img.youtube.com/vi/jXmUJvNSSm0/maxresdefault.jpg" alt="Muse - Unravelling" class="w-full h-full object-contain transform hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Muse – Unravelling</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Explora los sonidos épicos y atmosféricos de Muse en su tema "Unravelling", con riffs envolventes y un estilo característico de rock alternativo.
+        </p>
+        <a href="https://www.youtube.com/watch?v=jXmUJvNSSm0&list=RDjXmUJvNSSm0&start_radio=1" class="btn-article">Ver Video</a>
+      </div>
+    </article>
+
+    <!-- Video 2 -->
+    <article class="ariculos-videos group">
+      <div class="bg-gray-200 flex items-center justify-center overflow-hidden">
+        <img src="https://img.youtube.com/vi/SnMyroAH0rg/maxresdefault.jpg" alt="Nine Inch Nails - As Alive As You Need Me To Be" class="w-full h-full object-conta transform hover:scale-105 transition-transform duration-500in">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Nine Inch Nails – As Alive As You Need Me To Be</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Sumérgete en la intensidad industrial de Nine Inch Nails con este tema reciente, cargado de energía y texturas electrónicas oscuras.
+        </p>
+        <a href="https://www.youtube.com/watch?v=SnMyroAH0rg&list=RDSnMyroAH0rg&start_radio=1" class="btn-article">Ver Video</a>
+      </div>
+    </article>
+
+    <!-- Video 3 -->
+    <article class="ariculos-videos group">
+      <div class="bg-gray-200 flex items-center justify-center overflow-hidden">
+        <img src="https://img.youtube.com/vi/5Ozjel72yjQ/maxresdefault.jpg" alt="Twenty One Pilots - City Walls" class="w-full h-full object-conta transform hover:scale-105 transition-transform duration-500in">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Twenty One Pilots – City Walls</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          "City Walls" es un tema reciente de Twenty One Pilots que combina melodías pegajosas con letras introspectivas y un estilo alternativo moderno.
+        </p>
+        <a href="https://www.youtube.com/watch?v=5Ozjel72yjQ" class="btn-article">Ver Video</a>
+      </div>
+    </article>
+
+    <!-- Video 4 -->
+    <article class="ariculos-videos group">
+      <div class="bg-gray-200 flex items-center justify-center overflow-hidden">
+        <img src="https://img.youtube.com/vi/uqCV7wR-pmM/maxresdefault.jpg" alt="The Hives - Legalize Living" class="w-full h-full object-conta transform hover:scale-105 transition-transform duration-500in">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">The Hives – Legalize Living</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Disfruta del garage rock enérgico con "Legalize Living" de The Hives, lleno de riffs rápidos, actitud rebelde y pura adrenalina musical.
+        </p>
+        <a href="https://www.youtube.com/watch?v=uqCV7wR-pmM&list=RDuqCV7wR-pmM&start_radio=1" class="btn-article">Ver Video</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+
+
+    
+<section aria-label="Blog" class="max-w-7xl mx-auto px-4 py-12 font-inter">
+  <!-- Título   -->
+  <div class="w-full my-8 flex items-center">
+    <h2 class="text-2xl sm:text-[28px] leading-tight font-inter font-semibold text-black">
+      Últimos Artículos
+    </h2>
+    <div class="flex-1 h-[2px] bg-black ml-4"></div>
+  </div>
+
+  <!-- Contenedor artículos -->
+  <div class="flex flex-wrap justify-center gap-6">
+
+    <!-- Artículo 1 -->
+  
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden">
+        <img src="assets/img/a1.avif" alt="imagen de discos" class="img-article">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Top 10 discos de rock alternativo</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Descubre los discos que han definido el sonido del rock alternativo a lo largo de los años.
+        </p>
+        <a href="blog/article1.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+
+
+    <!-- Artículo 2 -->
+   
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden ">
+        <img src="assets/img/a2.jpg" alt="Nuevo lanzamiento de Twenty One Pilots" class="img-article ">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Nuevo lanzamiento de Twenty One Pilots "Breach"</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Sumérgete en el mundo de Twenty One Pilots con “Breach”, lleno de ritmos urbanos y melodías pegajosas.
+        </p>
+        <a href="blog/article2.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+
+
+    <!-- Artículo 3 -->
+
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden">
+        <img src="assets/img/a3.jpeg" alt="5 canciones que no puedes dejar de escuchar este mes" class="img-article">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">5 canciones que no puedes dejar de escuchar este mes</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Descubre las 5 canciones que no puedes dejar de escuchar este mes y dale play a lo mejor de la música actual.
+        </p>
+        <a href="blog/article3.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+ 
+
+    <!-- Artículo 4 -->
+  
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden">
+        <img src="assets/img/a4.webp" alt="Cómo ‘Smells Like Teen Spirit’ cambió el rock" class="img-article">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Cómo ‘Smells Like Teen Spirit’ cambió el rock para siempre</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Descubre la historia, curiosidades y legado del himno que definió una generación.
+        </p>
+        <a href="blog/article4.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+
+
+    <!-- Artículo 5 -->
+
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden">
+        <img src="assets/img/a5.avif" alt="Festivales imperdibles" class="img-article">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Festivales imperdibles de este año</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Los conciertos y festivales que ningún fan del rock y el indie debería perderse.
+        </p>
+        <a href="blog/article5.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+  
+
+    <!-- Artículo 6 -->
+
+    <article class="articulo ">
+      <div class="h-60 overflow-hidden">
+        <img src="assets/img/a6.jpg" alt="Artistas emergentes" class="img-article">
+      </div>
+      <div class="p-4 flex flex-col flex-1">
+        <h3 class="text-lg font-bold mb-1">Artistas emergentes que no puedes dejar de escuchar</h3>
+        <p class="text-gray-600 text-sm mb-2 flex-1">
+          Conoce a las bandas emergentes que todos estarán escuchando este año.
+        </p>
+        <a href="blog/article6.html" class="btn-article">Leer más</a>
+      </div>
+    </article>
+    
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+</main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-200 font-inter font-semibold font-inter">
+      <div class="container mx-auto py-14 px-6">
+        <div class="flex flex-wrap justify-center md:justify-between gap-8">
+
+          <div class="w-full md:w-1/3 lg:w-1/4 mb-8 md:mb-0 text-center md:text-left">
+            <a href="index.html">
+              <img class="h-28 mx-auto md:mx-0" src="assets/img/logo-2.png" alt="Logo" />
+            </a>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Tu portal de música desde.  
+
+              <br />
+              Contenido seguro y actualizado para todo Chile.
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="w-full sm:w-1/2 md:w-1/6 mb-6 md:mb-0 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Contacto</h5>
+            <ul class="list-none space-y-2">
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">+569 123 456 789</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">contacto@gmail.com</a></li>
+            </ul>
+          </div>
+
+
+          <div class="w-full sm:w-1/2 md:w-1/6 mb-6 md:mb-0 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Explora más música</h5>
+            <ul class="list-none space-y-2">
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Novedades</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Vinilos clásicos</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Playlists recomendadas</a></li>
+            </ul>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="w-full sm:w-1/2 md:w-1/6 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Síguenos</h5>
+            <div class="flex flex-col space-y-2 items-center md:items-start">
+              <a href="https://instagram.com" target="_blank" class="flex items-center text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                <img src="assets/img/intagram logo.png" alt="Instagram" class="w-5 h-5 mr-2" />
+                Instagram
+              </a>
+              <a href="https://x.com" target="_blank" class="flex items-center text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                <img src="assets/img/x logo.png" alt="X" class="w-5 h-5 mr-2" />
+                X
+              </a>
+              <a href="https://facebook.com" target="_blank" class="flex items-center text-gray-400 hover:text-blue-600 transition-colors duration-300">
+                <img src="assets/img/facebook logo.png" alt="Facebook" class="w-5 h-5 mr-2" />
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-7 flex justify-center">
+        <div class="border-t border-gray-800 w-11/12 max-w-7xl"></div>
+      </div>
+
+
+      <div class="text-center py-4 text-sm text-gray-400 tracking-wide">
+        <p class="mb-0">
+          &copy;<script>document.write(new Date().getFullYear());</script> MusicZone. Todos los Derechos Reservados 
+        </p>
+      </div>
+    </footer>
+
+<!-- Script para menú móvil -->
+    <script src="assets/js/menu-movil.js"></script>
+</body>
+</html>

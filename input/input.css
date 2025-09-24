@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@layer base {
+  body {
+    font-family: "Inter", sans-serif; 
+  }
+}
+
+
+@layer components {
+
+  /* Artículo de blog */
+    .articulo {
+      @apply bg-white shadow-md rounded-lg overflow-hidden flex flex-col w-[90%] sm:w-[45%] md:w-[30%] lg:w-[28%];
+    }
+  
+    /*Card de álbum */
+    .card-album {
+      @apply w-[60%] sm:w-[48%] md:w-[200px] lg:w-[230px] max-w-[260px] cursor-pointer;
+    }
+  
+    /*Imagen de la card */
+    .card-album img {
+      @apply rounded-lg;
+    }
+  
+    /*Imagen de artículo*/
+    .img-article {
+      @apply w-full h-full object-cover p-1 rounded-xl;
+    }
+  
+    /*Botón de los artículos*/
+    .btn-article {
+      @apply mt-auto inline-block px-4 py-2 text-sm font-semibold bg-gray-700 text-white rounded-lg;
+    }
+  
+    /*Articulo sección videos*/
+    .ariculos-videos {
+      @apply bg-white shadow-md overflow-hidden flex flex-col w-full sm:w-[48%] md:w-[48%] lg:w-[23%] rounded-xl ;
+    }
+
+}
+
+
+.hide-scroll-bar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;    
+}
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none; 
+}

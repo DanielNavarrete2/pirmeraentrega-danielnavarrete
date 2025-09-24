@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="bg-[#020617] text-white shadow-md fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo -->
+     <div class="text-2xl  font-bold font-inter tracking-wide">
+     <a href="index.html">MusicZone</a></div>
+
+    <!-- Botón hamburguesa (solo móvil) -->
+    <button id="menu-btn" aria-label="Abrir menú de navegación" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Navbar escritorio -->
+    <nav class="hidden md:flex flex-1 items-center justify-end ml-8">
+      <ul class="flex space-x-6 font-inter text-white text-base">
+        <li><a href="index.html" class="hover:text-purple-400 transition-colors">Inicio</a></li>
+        <li><a href="blog.html" class="hover:text-purple-400 transition-colors">Blog</a></li>
+        <li><a href="about.html" class="hover:text-purple-400 transition-colors text-purple-400">Nosotros</a></li>
+        <li><a href="contacto.html" class="hover:text-purple-400 transition-colors">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Menú móvil -->
+  <ul id="mobile-menu" class="hidden flex-col bg-gray-700 text-white w-full absolute top-full left-0 z-50">
+    <li><a href="index.html" class="block px-4 py-2 hover:bg-gray-600">Inicio</a></li>
+    <li><a href="blog.html" class="block px-4 py-2 hover:bg-gray-600">Blog</a></li>
+    <li><a href="about.html" class="block px-4 py-2 hover:bg-gray-600">Nosotros</a></li>
+    <li><a href="contacto.html" class="block px-4 py-2 hover:bg-gray-600">Contacto</a></li>
+  </ul>
+</header>
+
+<main class="max-w-7xl mx-auto px-6 py-20 pt-32 space-y-16 font-inter">
+
+  <section class="max-w-5xl mx-auto space-y-16">
+
+    <!-- About principal -->
+    <div class="text-center md:text-left max-w-3xl mx-auto space-y-6">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">Quiénes somos</h1>
+      <p class="text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+        <span class="font-semibold">MusicZone</span> es un espacio para los amantes de la música.
+        Aquí compartimos recomendaciones, novedades y tendencias para que descubras nuevos artistas y disfrutes
+        de tus álbumes favoritos.
+      </p>
+      <p class="text-base sm:text-lg md:text-xl leading-relaxed text-justify">
+        Nos enfocamos en crear una comunidad donde los fans puedan explorar distintos géneros, aprender sobre la
+        música y conectarse con lo mejor de cada artista.
+      </p>
+      <p class="text-lg sm:text-xl md:text-2xl font-semibold mt-6">
+        Cada canción, cada álbum, tiene su historia. Descúbrela con nosotros.
+      </p>
+    </div>
+
+
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-8">
+
+
+      <div class="flex-shrink-0 w-full sm:w-3/4 md:w-1/2 lg:w-[600px]">
+        <img src="assets/img/about1.png" alt="Música" class="w-full h-auto rounded-lg shadow-md object-contain">
+      </div>
+
+
+      <div class="w-full md:w-1/2 text-center md:text-left text-base sm:text-lg md:text-xl leading-relaxed">
+        <p class="text-justify pt-6 md:pt-0">
+          En <span class="font-semibold">MusicZone</span> creemos que la música merece ser escuchada y disfrutada
+          en todas sus formas. Ofrecemos un espacio para descubrir nuevos lanzamientos, explorar clásicos y recibir
+          recomendaciones personalizadas según tus gustos.
+
+          Nuestra comunidad comparte la pasión por la música y ayuda a que cada artista y cada álbum llegue a más personas
+          de manera auténtica.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-200 font-inter font-semibold font-inter">
+      <div class="container mx-auto py-14 px-6">
+        <div class="flex flex-wrap justify-center md:justify-between gap-8">
+
+          <div class="w-full md:w-1/3 lg:w-1/4 mb-8 md:mb-0 text-center md:text-left">
+            <a href="index.html">
+              <img class="h-28 mx-auto md:mx-0" src="assets/img/logo-2.png" alt="Logo" />
+            </a>
+            <p class="mt-4 text-gray-400 leading-relaxed">
+              Tu portal de música desde.  
+
+              <br />
+              Contenido seguro y actualizado para todo Chile.
+            </p>
+          </div>
+
+          <!-- Contacto -->
+          <div class="w-full sm:w-1/2 md:w-1/6 mb-6 md:mb-0 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Contacto</h5>
+            <ul class="list-none space-y-2">
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">+569 123 456 789</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">contacto@gmail.com</a></li>
+            </ul>
+          </div>
+
+
+          <div class="w-full sm:w-1/2 md:w-1/6 mb-6 md:mb-0 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Explora más música</h5>
+            <ul class="list-none space-y-2">
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Novedades</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Vinilos clásicos</a></li>
+              <li><a class="text-gray-400 hover:text-gray-100 transition-colors duration-300" href="#">Playlists recomendadas</a></li>
+            </ul>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="w-full sm:w-1/2 md:w-1/6 text-center md:text-left">
+            <h5 class="tracking-wide text-white font-semibold font-inter text-lg mb-4">Síguenos</h5>
+            <div class="flex flex-col space-y-2 items-center md:items-start">
+              <a href="https://instagram.com" target="_blank" class="flex items-center text-gray-400 hover:text-pink-500 transition-colors duration-300">
+                <img src="assets/img/intagram logo.png" alt="Instagram" class="w-5 h-5 mr-2" />
+                Instagram
+              </a>
+              <a href="https://x.com" target="_blank" class="flex items-center text-gray-400 hover:text-blue-400 transition-colors duration-300">
+                <img src="assets/img/x logo.png" alt="X" class="w-5 h-5 mr-2" />
+                X
+              </a>
+              <a href="https://facebook.com" target="_blank" class="flex items-center text-gray-400 hover:text-blue-600 transition-colors duration-300">
+                <img src="assets/img/facebook logo.png" alt="Facebook" class="w-5 h-5 mr-2" />
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-7 flex justify-center">
+        <div class="border-t border-gray-800 w-11/12 max-w-7xl"></div>
+      </div>
+
+
+      <div class="text-center py-4 text-sm text-gray-400 tracking-wide">
+        <p class="mb-0">
+          &copy;<script>document.write(new Date().getFullYear());</script> MusicZone. Todos los Derechos Reservados 
+        </p>
+      </div>
+    </footer>
+
+<!-- Script para menú móvil -->
+<script src="assets/js/menu-movil.js"></script>
+</body>
+</html>
